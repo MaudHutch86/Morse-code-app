@@ -1,0 +1,15 @@
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+    {% block title %}
+    <title>Title</title>
+    {% endblock %}
+{% block content %}
+   <div class="container">
+       <h1>Your message in Morse</h1>
+   <form method="POST" action="/">
+       {{wtf.quick_form(form) }}
+   </form>
+   </div>
+{% endblock %}
+l>
